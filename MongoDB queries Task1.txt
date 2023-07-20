@@ -8,7 +8,7 @@
 
 3.Find the product price which are not between 400 to 600:
 
-          Query: db.products.find({product_price:{$lte:400,$gte:600}})
+          Query: db.products.find({product_price:{$not:{$gte:400,$lte:600}}})
 
 4.List the four product which are grater than 500 in price :
 
